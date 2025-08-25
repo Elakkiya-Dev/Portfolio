@@ -34,7 +34,11 @@ function App() {
         <h2 className="text-4xl font-bold mb-4 text-indigo-700">About Me</h2>
         <div className="max-w-4xl mx-auto text-lg leading-relaxed text-gray-700">
           <p>
-            I'm a passionate frontend developer with 2.5 years of experience crafting intuitive and dynamic web applications. I excel in Angular and React development, API integration, and building scalable, maintainable codebases. I love transforming designs into functional, high-performing web apps.
+            Frontend Developer with 2.5 years of hands-on experience building scalable, responsive web applications
+            using Angular. Proficient in HTML, CSS, JavaScript, and modern UI frameworks like Bootstrap and
+            Tailwind CSS. Strong understanding of RESTful API integration and Agile methodologies. Known for
+            delivering clean, maintainable code and collaborating effectively in cross-functional teams.
+            {/* I'm a passionate frontend developer with 2.5 years of experience crafting intuitive and dynamic web applications. I excel in Angular and React development, API integration, and building scalable, maintainable codebases. I love transforming designs into functional, high-performing web apps. */}
           </p>
         </div>
       </section>
@@ -43,7 +47,7 @@ function App() {
       <section id="skills" className="py-24 px-6 bg-gradient-to-b from-blue-100 to-white text-center">
         <h2 className="text-4xl font-bold mb-8 text-purple-700">Skills</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto text-lg">
-          {["HTML", "CSS", "Bootstrap", "Tailwind CSS", "JavaScript", "TypeScript", "Angular", "React", "Git & GitHub"].map((skill, i) => (
+          {["HTML", "CSS", "Bootstrap", "Tailwind CSS", "JavaScript", "TypeScript", "Angular", "React", "Git & GitHub", "REST API Integration,", "GitHub", "Agile", "Taiga"].map((skill, i) => (
             <div
               key={i}
               className="bg-white shadow-xl p-6 rounded-2xl transform hover:scale-105 transition-transform border-t-4 border-indigo-400"
@@ -57,30 +61,52 @@ function App() {
       {/* Projects */}
       <section id="projects" className="py-24 px-6 bg-white text-center">
         <h2 className="text-4xl font-bold mb-10 text-blue-700">Projects</h2>
-        <div className="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-1 gap-10 max-w-6xl mx-auto">
           <div className="rounded-2xl bg-gradient-to-r from-cyan-100 to-blue-100 p-6 shadow-2xl text-left hover:scale-105 transition-transform border-l-8 border-cyan-400">
-            <h3 className="text-2xl font-semibold mb-2">Job Tracker Pro</h3>
-            <p className="mb-2">A full-stack job application tracker with CRUD, filters, and analytics dashboard.</p>
-            <p className="text-sm text-gray-700">React, Tailwind CSS, Node.js</p>
+            <h3 className="text-2xl font-semibold mb-2">Portfolio Website</h3>
+            <p className="mb-2">Designed and developed my personal portfolio with React and Tailwind for a clean and engaging UI.</p>
+            <p className="text-sm text-gray-700">React, Tailwind CSS</p>
           </div>
-          <div className="rounded-2xl bg-gradient-to-r from-pink-100 to-purple-100 p-6 shadow-2xl text-left hover:scale-105 transition-transform border-l-8 border-pink-400">
+          {/* <div className="rounded-2xl bg-gradient-to-r from-pink-100 to-purple-100 p-6 shadow-2xl text-left hover:scale-105 transition-transform border-l-8 border-pink-400">
             <h3 className="text-2xl font-semibold mb-2">Insurance Product Integrator</h3>
             <p className="mb-2">Built a unified Angular frontend integrating various insurance provider APIs.</p>
             <p className="text-sm text-gray-700">Angular, Bootstrap, REST APIs</p>
-          </div>
+          </div> */}
         </div>
       </section>
 
       {/* Experience */}
       <section id="experience" className="py-24 px-6 bg-gradient-to-br from-white to-blue-50 text-center">
         <h2 className="text-4xl font-bold mb-8 text-indigo-800">Experience</h2>
-        <div className="max-w-3xl mx-auto text-left bg-white shadow-2xl p-6 rounded-2xl border-l-8 border-indigo-400">
-          <h4 className="text-xl font-semibold">Frontend Developer</h4>
-          <p className="text-gray-700">Web Integration Team | 2.5 Years</p>
+        <div className="max-w-3xl m-2 mx-auto text-left bg-white shadow-2xl p-6 rounded-2xl border-l-8 border-indigo-400">
+          <h4 className="text-xl font-semibold">Angular Developer</h4>
+          <p className="text-gray-700"> Tecdata IT Services Private Limited - Chennai | 1.8 Years</p>
           <ul className="list-disc ml-6 mt-2 text-gray-600">
-            <li>Integrated multiple insurance products into a single web portal.</li>
-            <li>Worked on Angular components, services, and routing architecture.</li>
-            <li>Collaborated with backend and design teams for seamless delivery.</li>
+            <li><strong>Tech Stack : Angular, TypeScript, REST API, HTML, SCSS</strong></li>
+            <li>Developed and launched insurance products (Star Health Assure, Women Care, Young Star, Super Star).</li>
+            <li>Built modules like CKYC, proposer/insured info, nominee details, summary, and proposal workflow.</li>
+            <li>Integrated payment systems using JusPay and PayLater with success/failure handling.</li>
+            <li>Implemented policy download, review link, payment link, and API service integration.</li>
+            <li>Supported Travel Insurance and Renewal modules for Star, Reliance, and Care.</li>
+            <li>Handled testing, bug fixes, and coordination with QA team.</li>
+          </ul>
+        </div>
+        <div className="max-w-3xl m-2 mx-auto text-left bg-white shadow-2xl p-6 rounded-2xl border-l-8 border-indigo-400">
+          <h4 className="text-xl font-semibold">Junior Solution Engineer</h4>
+          <p className="text-gray-700">PupaClic Technologies - Chennai | 10 Months</p>
+          <ul className="list-disc ml-6 mt-2 text-gray-600">
+            <li><strong>Tech Stack :  HTML, CSS, Bootstrap, Javascript, ReactJs</strong></li>
+.            <li>Built Ul and service integration for WA Pages (App Store) and Revathi (eCommerce site).</li>
+            <li>Worked on ReactJS-based modules for internal tools like Pothys.</li>
+            <li>Developed WordPress websites for clients in textile and hospitality domains.</li>
+            <li>Managed bugs, collaborated with development team, and used Kanban for task tracking.</li>
+          </ul>
+        </div>
+        <div className="max-w-3xl m-2 mx-auto text-left bg-white shadow-2xl p-6 rounded-2xl border-l-8 border-indigo-400">
+          <h4 className="text-xl font-semibold">Intern</h4>
+          <p className="text-gray-700">PupaClic Technologies - Chennai | 1 Month</p>
+          <ul className="list-disc ml-6 mt-2 text-gray-600">
+            <li>Gained practical experience in HTML, CSS, JavaScript, AJAX, and PHP during my internship.</li>
           </ul>
         </div>
       </section>
@@ -90,13 +116,13 @@ function App() {
         <h2 className="text-4xl font-bold mb-6 text-blue-800">Contact</h2>
         <p className="text-lg mb-6 text-gray-700">Let's connect! Feel free to reach out 👇</p>
         <div className="flex justify-center space-x-8 text-3xl">
-          <a href="mailto:your.email@example.com" className="text-blue-600 hover:text-blue-800">
+          <a href="mailto:elakkiyamaruthamuthu@gmail.com" className="text-blue-600 hover:text-blue-800">
             <FaEnvelope />
           </a>
-          <a href="https://github.com/yourgithub" target="_blank" rel="noreferrer" className="text-gray-800 hover:text-black">
+          <a href="https://github.com/Elakkiya-Dev" target="_blank" rel="noreferrer" className="text-gray-800 hover:text-black">
             <FaGithub />
           </a>
-          <a href="https://linkedin.com/in/yourlinkedin" target="_blank" rel="noreferrer" className="text-blue-700 hover:text-blue-900">
+          <a href="https://www.linkedin.com/in/elakkiya-maruthamuthu" target="_blank" rel="noreferrer" className="text-blue-700 hover:text-blue-900">
             <FaLinkedin />
           </a>
         </div>
